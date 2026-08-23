@@ -17,36 +17,36 @@ Built on the clinical **Pima Indians Diabetes Database** (768 patient records), 
 
 ## Key Features
 
-- ** Real-Time Biomarker Risk Prediction**:
+-  Real-Time Biomarker Risk Prediction**:
   - Live evaluation across 8 clinical biomarkers (Glucose, BMI, Age, Insulin, Blood Pressure, Skinfold Thickness, Diabetes Pedigree, Pregnancies).
   - Dynamic gauge meter displaying calibrated risk percentages (`<35%` Low, `35-59%` Moderate, `≥60%` Elevated).
   - Quick-load clinical archetype presets (e.g., Gestational History, Severe Insulin Resistance, Healthy Euglycemia).
 
-- ** SHAP Explainability & Feature Attribution**:
+-  SHAP Explainability & Feature Attribution**:
   - Local waterfall attribution measuring odds-ratio impact for each physiological parameter.
   - Transparent force visualizers illustrating how biomarkers shift probabilities away from the cohort baseline ($E[f(x)] = 34.9\%$).
 
-- ** Interactive "What-If" Sensitivity Simulator**:
+-  Interactive "What-If" Sensitivity Simulator**:
   - Direct lifestyle slider adjustments (e.g., target BMI reduction, postprandial glucose control).
   - Instant re-calculation of predicted risk reduction.
 
-- ** Model Arena & Dynamic Threshold Tuner**:
+-  Model Arena & Dynamic Threshold Tuner**:
   - Head-to-head comparison of **Random Forest** (Champion, ROC-AUC: `0.868`), **XGBoost**, **SVM (RBF)**, and **Logistic Regression**.
   - Interactive classification cutoff slider ($\theta = 0.15 \to 0.85$) updating sensitivity (Recall), specificity, 2×2 confusion matrix, and ROC operating point in real time.
 
-- ** Exploratory Data Analysis (EDA) Lab**:
+-  Exploratory Data Analysis (EDA) Lab**:
   - Distribution histograms comparing diabetic vs. non-diabetic cohorts across all 8 features.
   - Class balance analysis (65.1% negative vs. 34.9% positive) and zero-imputation tracking.
 
-- ** High-Throughput Batch Cohort Tester**:
+-  High-Throughput Batch Cohort Tester**:
   - Test patient cohorts simultaneously with live search, risk-level filters, and column sorting.
   - Paste/upload custom CSV data and export results to `.csv` with one click.
 
-- ** Clinical Diagnostic Assessment & PDF Report Generator**:
+-  Clinical Diagnostic Assessment & PDF Report Generator**:
   - Generates comprehensive diagnostic summaries with pathophysiological mechanisms, dietary protocols, physical activity recommendations, and acute warning signs.
   - Print-ready and copyable markdown clinical format.
 
-- ** Dark & Light Mode Support**:
+-  Dark & Light Mode Support**:
   - Modern, accessible interface with instant theme toggle and local storage persistence.
 
 ---
@@ -112,7 +112,7 @@ Built on the clinical **Pima Indians Diabetes Database** (768 patient records), 
 
 | Algorithm | Accuracy | Precision | Recall (Sensitivity) | F1-Score | ROC-AUC | Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Random Forest Classifier** | **83.1%** | **0.784** | **0.741** | **0.762** | **0.868** | ⭐ **Champion** |
+| **Random Forest Classifier** | **83.1%** | **0.784** | **0.741** | **0.762** | **0.868** |  **Champion** |
 | **XGBoost Classifier** | 81.8% | 0.760 | 0.704 | 0.731 | 0.856 | High Performer |
 | **Support Vector Machine (RBF)** | 79.9% | 0.750 | 0.648 | 0.695 | 0.842 | Baseline |
 | **Logistic Regression** | 78.6% | 0.725 | 0.630 | 0.674 | 0.835 | Interpretable Baseline |
