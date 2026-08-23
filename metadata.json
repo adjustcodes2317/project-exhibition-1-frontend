@@ -1,0 +1,7 @@
+{
+  "name": "DiaPredict AI - ML Diabetes Risk Prediction & Clinical Analytics",
+  "description": "Full-stack machine learning exhibition web application for Diabetes Risk Prediction featuring model benchmarking (Logistic Regression, Random Forest, SVM, XGBoost), interactive EDA, SHAP explainability, and live clinical assessment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

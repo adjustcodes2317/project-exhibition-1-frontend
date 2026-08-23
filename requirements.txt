@@ -1,0 +1,40 @@
+# ==============================================================================
+# DiaPredict AI - Machine Learning & Backend Requirements
+# ==============================================================================
+# This file contains the Python dependencies required for:
+# 1. Training, tuning, and evaluating ML classification models (RF, XGBoost, SVM, Logistic Regression)
+# 2. Exploratory Data Analysis (EDA) and SHAP explainability calculations
+# 3. Running an optional Python FastAPI / Flask REST API microservice
+# ==============================================================================
+
+# Core Scientific & Data Processing
+numpy>=1.24.3
+pandas>=2.0.3
+scipy>=1.11.2
+
+# Machine Learning & Modeling
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+joblib>=1.3.2
+
+# Model Explainability & Interpretability
+shap>=0.44.0
+
+# Data Visualization & EDA (Jupyter / Scripts)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# REST API Backend Framework (FastAPI Option)
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.4
+python-dotenv>=1.0.1
+cors>=1.0.1
+
+# AI Clinical Consultation (Optional Gemini LLM Integration)
+google-genai>=0.1.1
+
+# Development, Testing & Jupyter Notebooks
+jupyterlab>=4.1.0
+pytest>=8.0.0
+httpx>=0.27.0
